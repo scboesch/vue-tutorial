@@ -4,6 +4,7 @@
       Counter: {{counter}}
       <button @click="increment()"> + </button>
       <button @click="decrement()"> - </button>
+      <button @click="reset()"> Reset </button>
     </div>
     <script src="https://unpkg.com/vue"></script>
     <script>
@@ -18,6 +19,9 @@
             }, 
             decrement: function(){
             	this.counter -= 1;
+            },
+            reset: function(){
+            	this.counter = 0;
             }
         }
       })
