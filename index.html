@@ -3,6 +3,7 @@
     <div id="app">
       Counter: {{counter}}
       <button @click="increment()"> + </button>
+      <button @click="increment()"> - </button>
     </div>
     <script src="https://unpkg.com/vue"></script>
     <script>
@@ -14,6 +15,9 @@
         methods: {
         	increment: function(){
             	this.counter += 1;
+            }, 
+            decrement: function(){
+            	this.counter -= 1;
             }
         }
       })
