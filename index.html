@@ -2,14 +2,19 @@
   <body>
     <div id="app">
       Counter: {{counter}}
-      <button> + </button>
+      <button @click="increment()"> + </button>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/vue"></script>
     <script>
       var app = new Vue({
         el: '#app',
         data: {
           counter: 1
+        },
+        methods: {
+        	increment: function(){
+            	this.counter += 1;
+            }
         }
       })
     </script>
