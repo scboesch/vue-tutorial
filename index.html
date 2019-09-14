@@ -1,8 +1,17 @@
 <html>
   <body>
     <div id="app">
-      Counter: 5 
+      Counter: {{counter}}
       <button> + </button>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          counter: 1
+        }
+      })
+    </script>
   </body>
-<html>
+</html>
